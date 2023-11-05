@@ -1,11 +1,11 @@
-About empiricaldist
-===================
+About empiricaldist-feedstock
+=============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/empiricaldist-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/AllenDowney/empiricaldist
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/empiricaldist-feedstock/blob/main/LICENSE.txt)
 
 Summary: Python library that represents empirical distributions.
 
