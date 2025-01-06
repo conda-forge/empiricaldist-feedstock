@@ -6,21 +6,21 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/empiricaldist-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/empiricaldist-{{ version }}.tar.gz
   sha256: fc3901190ac36ecbfa5d5104cdc4120ec6df0beb2fb1632016cf6590b68491da
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.6
+    - python {{ python_min }}
     - pip
     - setuptools
   run:
-    - python >=3.6
+    - python >={{ python_min }}
     - matplotlib-base
     - numpy
     - pandas
@@ -34,6 +34,7 @@ test:
     - python -m unittest empiricaldist.test_empiricaldist
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/AllenDowney/empiricaldist
