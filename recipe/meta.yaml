@@ -1,5 +1,5 @@
 {% set name = "empiricaldist" %}
-{% set version = "0.7.9" %}
+{% set version = "0.8.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/empiricaldist-{{ version }}.tar.gz
-  sha256: ba70db97629e12dd0fc16a2735bdf0aeca38d073403e462ccd814133fbd91b60
+  sha256: 4a69df79e807ba8269fbb5855ac6899234a3f533ca055bcd4cd43b44b2b1a268
 
 build:
   noarch: python
